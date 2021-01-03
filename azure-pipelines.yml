@@ -28,6 +28,7 @@ steps:
 
 - task: SonarQubePrepare@4
   inputs:
+    SonarQube: 'MyFirstJavaProject'
     scannerMode: 'Other'
     extraProperties: |
       # Additional properties that will be passed to the scanner, 
