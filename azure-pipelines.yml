@@ -25,3 +25,20 @@ steps:
     echo Starting the build
     mvn package
   displayName: 'Build with Maven'
+
+- task: SonarQubePrepare@4
+  inputs:
+    scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectKey=MyShuttle
+      sonar.host.url=http://20.72.185.97:9000
+      sonar.login=4407616e29f9e010ab2c077714c23ff5e0057f15
+
+- task: SonarQubeAnalyze@4
+
+- task: SonarQubePublish@4
+  inputs:
+    pollingTimeoutSec: '300'
