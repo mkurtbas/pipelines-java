@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: SonarQubePrepare@4
   inputs:
-    SonarQube: 'SonerQubeDev'
+    SonarQube: 'SonarQubeDev'
     scannerMode: 'Other'
     extraProperties: |
       # Additional properties that will be passed to the scanner, 
