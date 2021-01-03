@@ -47,7 +47,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <sonar.host.url>http://mksonarqube.uksouth.azurecontainer.io:9000//</sonar.host.url>
-    <sonar.login>2bccede869a15d1decb97b2dfd7caad48b2c9e3f</sonar.login>
+    <sonar.login>076bff41a7f9e11b1d92cb48299b1c4e4675df89</sonar.login>
   </properties>
 	
 </project>
