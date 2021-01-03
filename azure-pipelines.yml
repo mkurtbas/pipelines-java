@@ -30,8 +30,13 @@ steps:
 
 - task: SonarQubePrepare@4
   inputs:
-    SonarQube: 'SonerQubeDev'
     scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectName=MyShuttle
+      sonar.projectKey=MyShuttle
 
 - task: SonarQubePublish@4
   inputs:
