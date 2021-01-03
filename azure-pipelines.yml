@@ -28,7 +28,7 @@ steps:
 
 - task: SonarQubePrepare@4
   inputs:
-    SonarQube: 'MyShuttle'
+    SonarQube: 'SonerQubeDev'
     scannerMode: 'Other'
     extraProperties: |
       # Additional properties that will be passed to the scanner, 
